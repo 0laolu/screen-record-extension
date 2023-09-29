@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- imported fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="./src/index.css">
+    <title>HelpMeOut</title>
+</head>
+<body class="main">
+    <div class="extension-container">
+        <header class="extension-header">
+            <figure class="logo">
+                <img src="./src/assets/extension-logo.png" alt="extension-logo">
+            </figure>
+            <div class="nav-icons">
+                <img src="./src/assets/settings-icon.png" alt="settings-icon">
+                <img src="./src/assets/close-circle.png" alt="close-circle icon">
+            </div>
+        </header>
+        <p class="description">This extension helps you record and share help videos with ease.</p>
+
+        <div class="screen-options">
+            <img src="./src/assets/full-screen-icon.png" alt="full-screen-icon">
+            <img src="./src/assets/current-tab-icon.png" alt="current-tab-icon">
+        </div>
+
+        <div class="include-camera-option">
+            <div class="option-title">
+                <img src="./src/assets/video-camera-icon.png" alt="video-camera-icon">
+                <p class="option-title">Camera</p>
+            </div>
+            <div class="toggle-option"></div>
+        </div>
+
+        <div class="include-audio-option">
+            <div class="option-title">
+                <img src="./src/assets/microphone-icon.png" alt="microphone-icon">
+                <p class="option-title">Audio</p>
+            </div>
+            <div class="toggle-option"></div>
+        </div>
+        
+        <button class="start-btn">Start Recording</button>
+        <button class="stop-btn">Stop Recording</button>
+      </div>
+
+      <script src="./src/js/popup.js"></script>
+</body>
+</html>
