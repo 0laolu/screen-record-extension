@@ -1,8 +1,11 @@
-# React + Vite
+# HelpMeOut
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Overview 
+> Create a Chrome Extension plugin that can record a user's screen and send the recorded content to a specific online location (endpoint)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Implementing the design exactly as provided. Ensuring that all pages match the design precisely.
+- The plugin must work seamlessly on the desktop.
+- Create a mechanism to record the user's screen.
+- Develop a feature to submit the recorded content to a specific endpoint.
+- Make it user-friendly and easy to use.
