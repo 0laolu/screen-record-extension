@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Degraphe Screen Recorder", 
+    "name": "HelpMeOut Screen Recorder", 
     "description": "It records the user's screen",
     "icons": {
         "128": "./src/assets/icon-logo-128.png"

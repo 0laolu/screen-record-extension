@@ -1,0 +1,10 @@
+.main {
+    width: 80%;
+    margin: 0 auto 7rem auto;
+}
+
+.pageHeader {
+    color: #141414;
+    font-weight: 700;
+    font-size: 2.25rem;
+}

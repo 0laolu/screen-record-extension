@@ -1,12 +1,13 @@
 import { useState } from 'react'
 // import PopUp from './components/Popup'
+import VideoPreview from './components/video-preview/VideoPreview'
 
 function App() {
   
 
   return (
     <>
-      <h1>hello world</h1>
+      <VideoPreview />
     </>
   )
 }

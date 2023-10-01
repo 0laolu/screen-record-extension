@@ -6,17 +6,152 @@
 }
 
 button {
-  font-family: 'Sora', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
+
+/* STYLING THE EXTENSION */
 
 .main {
   min-width: 300px;
+  padding: 1.5rem 0;
 }
 
 .extension-container {
   border: none;
+  width: 90%;
+  max-width: 252px;
+  margin: 0 auto;
 }
 
-/* .title {
-} */
+.extension-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+
+.nav-icons img {
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.extension-description {
+  color: #413C6D;
+  margin-bottom: 2rem;
+  font-size: 14px;
+}
+
+.screen-options {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.include-camera-option,  
+.include-audio-option  {
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #0F172A;
+  margin-bottom: 0.7rem;
+  border-radius: 12px;
+}
+
+.option-title {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.option-title p {
+  color: #100A42;
+  margin-left: 0.5rem;
+}
+
+.start-btn, 
+.stop-btn {
+  background-color: #120B48;
+  color: white;
+  width: 100%;
+  padding: 0.7rem 0;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.start-btn {
+  margin: 1rem 0 0.7rem 0;
+}
+
+/* STYLING THE HEADER */
+header {
+  margin-bottom: 3rem;
+}
+
+.nav-bar {
+  width: 80%;
+  padding: 1rem 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 8rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  list-style: none;
+}
+
+.nav-links li {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  word-spacing: 0.2rem;
+}
+
+.about-extension {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+/* STYLING FOR THE FOOTER */
+
+.footer {
+  background-color: #120B48;
+  color: white;
+  width: 100%;
+  padding: 2.2rem 0 1rem 0;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-content {
+  width: 80%;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content h3,
+.footer-content p {
+  font-size: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.footer-content p {
+  color: hsl(0, 0%, 90%);
+}
+
+
 

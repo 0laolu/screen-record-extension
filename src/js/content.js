@@ -12,8 +12,10 @@ const onAccessApproved = (stream) => {
     // stopping the recording
     recorder.onstop = function() {
         stream.getTracks().forEach(function(track) {
+            console.log("stopped recording")
             if(track.readyState === "live") {
                 track.stop()
+                
             }
         })
     }
@@ -22,8 +24,10 @@ const onAccessApproved = (stream) => {
     recorder.ondataavailable = function(event) {
         let recordedBlob = event.data
 
+        // location.assign("https://www.github.com")
         // saving the recording
         let url = URL.createObjectURL(recordedBlob);
+        console.log(url)
 
         // downloading it to our system
         let anchorTag = document.createElement("a")
@@ -57,8 +61,10 @@ chrome.runtime.onMessage.addListener( (message, sender, sendResponse)=> {
             video: {
                 width: 999999999,
                 height: 999999999
-            }
+            },
+            surfaceSwitching: "include"
         }).then((stream) => {
+            console.log(stream)
             onAccessApproved(stream)
         })
     }
