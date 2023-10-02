@@ -127,6 +127,71 @@ header {
   width: 50%;
 }
 
+
+/* STYLING THE HERO SECTION */
+
+.hero-section {
+  margin: 1rem 0 5rem 0;
+}
+
+.hero-section-content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-section-content {
+  width: 50%;
+  max-width: 547px;
+}
+
+.hero-section-content h1 {
+  font-size: 3.2rem;
+  color: #141414;
+}
+
+.hero-section-content .description {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 0.9rem;
+  padding: 1.5rem 0 1rem 0;
+  line-height: 1.6;
+}
+
+.hero-btn-container {
+  margin: 2rem 0;
+}
+
+.hero-btn-container button {
+  background-color: #120B48;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  max-width: 239px;
+  padding: 0.9rem 0;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+.hero-btn-container button img {
+  display: block;
+  position: relative;
+  top: 0.1rem;
+  margin-left: 0.5rem;
+}
+
+.hero-image {
+  flex-shrink: 1;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* STYLING FOR THE FOOTER */
 
 .footer {
