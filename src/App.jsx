@@ -12,7 +12,7 @@ function App() {
       
       <Routes>
         <Route path='/' element={<LandingPage />}/>
-        <Route path='home' element={<VideoPreview />}/>
+        <Route path='videoUrl' element={<VideoPreview />}/>
       </Routes>
     </>
   )

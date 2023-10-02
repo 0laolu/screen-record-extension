@@ -25,7 +25,7 @@ const onAccessApproved = (stream) => {
         let recordedBlob = event.data
         console.log(recordedBlob)
 
-        // location.assign("https://www.github.com")
+        location.assign("https://helpmeout5.netlify.app/videoUrl")
         // saving the recording
         let url = URL.createObjectURL(recordedBlob);
         console.log(url)
