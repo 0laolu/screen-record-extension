@@ -88,8 +88,17 @@ button {
 }
 
 /* STYLING THE HEADER */
+.page-wrapper {
+  background-color: #F0F3F4;
+}
+
 header {
-  margin-bottom: 3rem;
+  background-color: white;
+  
+}
+
+section {
+  background-color: white;
 }
 
 .nav-bar {
@@ -131,7 +140,8 @@ header {
 /* STYLING THE HERO SECTION */
 
 .hero-section {
-  margin: 1rem 0 5rem 0;
+  padding: 6rem 0 4rem 0;
+  margin-bottom: 5rem;
 }
 
 .hero-section-content-wrapper {
@@ -188,6 +198,85 @@ header {
 }
 
 .hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* STYLING FOR THE FEATURES SECTION */
+
+.features-section {
+  background-color: white;
+  padding: 6rem 0;
+  margin-bottom: 5rem;
+}
+
+.features-section-content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.features-section-content-wrapper .heading {
+  text-align: center;
+}
+
+.section-header {
+  font-size: 2rem;
+  color: #141414;
+}
+
+.features-section-content-wrapper .heading p {
+  color: #616163;
+  font-size: 0.9rem;
+  word-spacing: 0.03rem;
+  padding-top: 1.5rem;
+}
+
+.features-section-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6rem ;
+}
+
+.features-section-app-features {
+  width: 50%;
+}
+
+.app-features-card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 548px;
+  margin-bottom: 3rem;
+}
+
+.app-features-card:last-child {
+  margin-bottom: 1rem;
+}
+
+.app-features-content {
+  width: 88%;
+}
+
+.app-features-content h3 {
+  color: #1B233D;
+  font-size: 1.3rem;
+  padding-bottom: 0.8rem;
+}
+
+.app-features-content p {
+  color: #616163;
+  font-size: 0.9rem;
+  word-spacing: 0.05rem;
+  line-height: 1.5;
+}
+
+.features-section-image {
+  flex-shrink: 1;
+}
+
+.features-section-image img {
   max-width: 100%;
   height: auto;
 }

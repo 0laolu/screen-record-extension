@@ -13,7 +13,7 @@ export default function LandingPage() {
     }, 3500)
 
     return (
-        <>
+        <div className="page-wrapper">
             {
                 isLoading ? 
                     <Loader />
@@ -27,6 +27,6 @@ export default function LandingPage() {
                 </div>
             }
             
-        </>
+        </div>
     )
 }
