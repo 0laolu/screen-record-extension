@@ -21,11 +21,13 @@ export default function VideoPreviewBody() {
                         
 
                         <form>
-                            <input 
-                                type="email" 
-                                placeholder="enter email of receiver"
-                            />
-                            <button>Send</button>
+                            <div className={styles.inputContainer}>
+                                <input 
+                                    type="email" 
+                                    placeholder="enter email of receiver"
+                                />
+                                <button>Send</button>
+                            </div>
                         </form>
                     </section>
 
@@ -33,20 +35,34 @@ export default function VideoPreviewBody() {
                         <h3 className={styles.videoUrlHeader}>Video Url</h3>
 
                         <form>
-                            <input 
-                                type="email" 
-                                placeholder="https://www.helpmeout/Untitled_Video_20232509"
-                            />
-                            <button><span><img src={copyLogo} alt="" /></span>Copy</button>
+                            <div className={styles.inputContainer}>
+                                <input 
+                                    type="text" 
+                                    placeholder="https://www.helpmeout/Untitled_Video_20232509"
+                                />
+                                <button><span><img src={copyLogo} alt="" /></span>Copy</button>
+                            </div>
                         </form>
                     </section>
 
                     <div className={styles.shareVideo}>
                         <h3>Share your video</h3>
                         <div className={styles.shareOptionsContainer}>
-                            <p><span><img src={facebookIcon} alt="" />Facebook</span></p>
-                            <p><span><img src={whatsappIcon} alt="" />Whatsapp</span></p>
-                            <p><span><img src={telegramIcon} alt="" />Telegram</span></p>
+                            <p>
+                                <span>
+                                    <img src={facebookIcon} alt="" />
+                                </span>Facebook
+                            </p>
+                            <p>
+                                <span>
+                                    <img src={whatsappIcon} alt="" />
+                                </span>Whatsapp
+                            </p>
+                            <p>
+                                <span>
+                                    <img src={telegramIcon} alt="" />
+                                </span>Telegram
+                            </p>
                         </div>
                     </div>
                 </div>

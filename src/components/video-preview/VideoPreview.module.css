@@ -1,10 +1,10 @@
 .main {
-    width: 80%;
     margin: 0 auto 7rem auto;
 }
 
 .videoPreviewBody {
-    margin-bottom: 3rem;
+    width: 80%;
+    margin: 0 auto 3rem auto;
     display: flex;
 }
 
@@ -26,6 +26,7 @@
 .videoNameHeader {
     color: #727272;
     font-size: 0.8rem;
+    padding-bottom: 1rem;
 }
 
 .videoName {
@@ -33,24 +34,25 @@
     font-size: 1.2rem;
     font-weight: 500;
     display: flex;
-    /* align-items: center; */
 }
 
 .editIcon {
     margin-left: 2rem;
 }
 
-.videoNameContainer form {
+.inputContainer {
     position: relative;
+    width: 90%;
+    max-width: 550px;
 }
 
 .videoNameContainer input {
     background-color: rgba(182, 179, 198, 0.2);
-    padding: 1.17rem;
+    padding: 1.17rem 1rem;
     border: none;
     border-radius: 16px;
-    width: 90%;
-    max-width: 550px;
+    width: 100%;
+    /* max-width: 550px; */
     margin-top: 1.5rem;
     outline: none;
 }
@@ -63,7 +65,7 @@
     border: none;
     border-radius: 8px;
     position: absolute;
-    right: 10rem;
+    right: 1rem;
     top: 42%;
 }
 
@@ -77,17 +79,14 @@
     color: #141414;
 }
 
-.videoUrlContainer form {
-    position: relative;
-}
 
 .videoUrlContainer input {
     background-color: rgba(182, 179, 198, 0.2);
     padding: 1.17rem 0.5rem;
     border: 1px solid #929292;
     border-radius: 16px;
-    width: 90%;
-    max-width: 550px;
+    width: 100%;
+    /* max-width: 550px; */
     margin-top: 1.5rem;
     outline: none;
 }
@@ -95,12 +94,13 @@
 .videoUrlContainer button {
     width: 20%;
     max-width: 104px;
+    border: 1px solid #120B48;
     border-radius: 8px;
     padding: 0.42rem 0;
     font-size: 0.8rem;
     position: absolute;
-    right: 9.8rem;
-    top: 17%;
+    right: 0.6rem;
+    top: 42%;
 }
 
 ::placeholder {
@@ -113,4 +113,73 @@
 
 .shareVideo h3 {
     font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.shareOptionsContainer {
+    width: 90%;
+    max-width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shareOptionsContainer p {
+    border: 1px solid #08051E;
+    font-size: 0.8rem;
+    width: 50%;
+    max-width: 141px;
+    padding: 0.42rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    
+}
+
+.shareOptionsContainer span {
+    margin-right: 0.5rem;
+}
+
+.saveVideoContainer {
+    background-color: rgba(231, 231, 237, 0.2);
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.saveVideoContent {
+    text-align: center;
+    width: 50%;
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+.saveVideoContent h3 {
+    color: #141414;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.saveBtnContainer {
+    margin: 2rem 0;
+}
+
+.saveBtnContainer button {
+    background-color: #120B48;
+    color: #F9F9FF;
+    width: 30%;
+    max-width: 150px;
+    font-size: 0.8rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+}
+
+.saveVideoContent p {
+    color: #7E7E7E;
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.saveVideoContent a {
+    color: #120B48;
 }
