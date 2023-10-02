@@ -23,6 +23,7 @@ const onAccessApproved = (stream) => {
     // accessing the recording
     recorder.ondataavailable = function(event) {
         let recordedBlob = event.data
+        console.log(recordedBlob)
 
         // location.assign("https://www.github.com")
         // saving the recording
@@ -44,6 +45,7 @@ const onAccessApproved = (stream) => {
         URL.revokeObjectURL(url)
     }
 }
+
 
 
 chrome.runtime.onMessage.addListener( (message, sender, sendResponse)=> {

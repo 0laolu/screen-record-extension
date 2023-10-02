@@ -14,8 +14,11 @@ export default function VideoPreviewBody() {
 
                     <section className={styles.videoNameContainer}>
                         <h3 className={styles.videoNameHeader}>Name</h3>
-                        <p className={styles.videoName}>Untitled_Video_20232509</p>
-                        <span className={styles.editIcon}><img src={editLogo} alt="" /></span>
+                        <p className={styles.videoName}>
+                            Untitled_Video_20232509
+                            <span className={styles.editIcon}><img src={editLogo} alt="" /></span>
+                        </p>
+                        
 
                         <form>
                             <input 
@@ -39,6 +42,7 @@ export default function VideoPreviewBody() {
                     </section>
 
                     <div className={styles.shareVideo}>
+                        <h3>Share your video</h3>
                         <div className={styles.shareOptionsContainer}>
                             <p><span><img src={facebookIcon} alt="" />Facebook</span></p>
                             <p><span><img src={whatsappIcon} alt="" />Whatsapp</span></p>

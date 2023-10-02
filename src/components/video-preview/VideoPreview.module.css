@@ -3,8 +3,114 @@
     margin: 0 auto 7rem auto;
 }
 
+.videoPreviewBody {
+    margin-bottom: 3rem;
+    display: flex;
+}
+
+.recordingDetails {
+    width: 55%;
+    border-right: 1px solid #727272;
+}
+
 .pageHeader {
     color: #141414;
     font-weight: 700;
     font-size: 2.25rem;
+}
+
+.videoNameContainer {
+    margin-top: 3rem;
+}
+
+.videoNameHeader {
+    color: #727272;
+    font-size: 0.8rem;
+}
+
+.videoName {
+    color: #413C6D;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    /* align-items: center; */
+}
+
+.editIcon {
+    margin-left: 2rem;
+}
+
+.videoNameContainer form {
+    position: relative;
+}
+
+.videoNameContainer input {
+    background-color: rgba(182, 179, 198, 0.2);
+    padding: 1.17rem;
+    border: none;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 550px;
+    margin-top: 1.5rem;
+    outline: none;
+}
+
+.videoNameContainer button {
+    background-color: #605C84;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.64rem;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    right: 10rem;
+    top: 42%;
+}
+
+
+.videoUrlContainer {
+    margin-top: 3rem;
+}
+
+.videoUrlHeader {
+    font-size: 1rem;
+    color: #141414;
+}
+
+.videoUrlContainer form {
+    position: relative;
+}
+
+.videoUrlContainer input {
+    background-color: rgba(182, 179, 198, 0.2);
+    padding: 1.17rem 0.5rem;
+    border: 1px solid #929292;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 550px;
+    margin-top: 1.5rem;
+    outline: none;
+}
+
+.videoUrlContainer button {
+    width: 20%;
+    max-width: 104px;
+    border-radius: 8px;
+    padding: 0.42rem 0;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 9.8rem;
+    top: 17%;
+}
+
+::placeholder {
+    font-size: 0.8rem;
+}
+
+.shareVideo {
+    margin-top: 3rem;
+}
+
+.shareVideo h3 {
+    font-size: 0.8rem;
 }

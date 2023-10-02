@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- imported fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../preview.css">
+    <title>Recording Preview</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <figure class="logo">
+                <img src="../src/assets/header-logo.png" alt="" />
+            </figure>
+            <ul class="nav-links">
+                <div class="about-extension">
+                    <li>Features</li>
+                    <li>How It Works</li>
+                </div>
+                <div class="get-started">
+                    <li>Get Started</li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="page-body">
+            <div class="recording-details">
+                <h1>Your video is ready!</h1>
+
+                <section class="video-name-container">
+                    <h3 class="video-name-header">Name</h3>
+                    <p class="video-name">Untitled_Video_20232509</p>
+                    <span class="edit-icon"><img src="../src/assets/edit-logo.png" alt=""></span>
+
+                    <form>
+                        <input type="email" placeholder="enter email of receiver">
+                        <button>Send</button>
+                    </form>
+                </section>
+
+                <section class="video-url-container">
+                    <h3 class="video-name-header">Video Url</h3>
+
+                    <form>
+                        <input type="text" placeholder="https://www.helpmeout/Untitled_Video_20232509">
+                        <button><span><img src="../src/assets/copy-logo.png" alt=""></span></button>
+                    </form>
+                </section>
+
+                <div class="share-video">
+                    <div class="share-options-container">
+                        <p><span><img src="../src/assets/facebook-icon.png" alt=""></span></p>
+                        <p><span><img src="../src/assets/whatsapp-icon.png" alt=""></span></p>
+                        <p><span><img src="../src/assets/telegram-icon.png" alt=""></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recorded-video">
+
+            </div>
+        </section>
+
+        <section class="save-video-container">
+            <div class="save-video-content">
+                <h3>To ensure the availability and privacy of your video, we recommend saving it to your account.</h3>
+                <div class="save-btn-container">
+                    <button>Save Video</button>
+                </div>
+                <p>Don't have an account? <a href="#">Create account</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <figure class="footer-logo">
+                <img src="../src/assets/footer-logo.png" alt="" />
+            </figure>
+
+            <div class="menu-options">
+                <h3>Menu</h3>
+                <p>Home</p>
+                <p>Converter</p>
+                <p>How It Works</p>
+            </div>
+
+            <div class="about-us-options">
+                <h3>About us</h3>
+                <p>About</p>
+                <p>Contact Us</p>
+                <p>Privacy Policy</p>
+            </div>
+
+            <div class="screen-record-options">
+                <h3>Screen Record</h3>
+                <p>Browser Window</p>
+                <p>Desktop</p>
+                <p>Application</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../src/js/content.js"></script>
+    <script type="module" src="../src/js/popup.js"></script>
+</body>
+</html>
