@@ -3,10 +3,12 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Sora', sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button {
   font-family: 'Work Sans', sans-serif;
+  cursor: pointer;
 }
 
 /* STYLING THE EXTENSION */
@@ -101,6 +103,7 @@ header {
 
 .logo img {
   width: 8rem;
+  cursor: pointer;
 }
 
 .nav-links {
