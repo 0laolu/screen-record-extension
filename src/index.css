@@ -258,6 +258,11 @@ section {
   margin-bottom: 1rem;
 }
 
+.feature-icon img {
+  max-width: 100%;
+  height: auto;
+}
+
 .app-features-content {
   width: 88%;
 }
@@ -309,6 +314,11 @@ section {
   max-width: 358px;
   margin: 0 auto;
   text-align: center;
+}
+
+.how-it-works-card-content img {
+  max-width: 100%;
+  height: auto;
 }
 
 .card-content-header {
@@ -363,5 +373,302 @@ section {
   color: hsl(0, 0%, 90%);
 }
 
+
+@media screen and (max-width: 1120px) {
+  
+  .nav-bar {
+    width: 90%;
+    padding: 1rem 0;
+  }
+  
+  .logo img {
+    width: 8rem;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-links li {
+    font-size: 0.7rem;
+  }
+  
+  .about-extension {
+    display: none;
+  }
+  
+  .get-started {
+    cursor: pointer;
+  }
+
+
+  /* HERO SECTION */
+
+  .hero-section {
+    padding: 4rem 0 5rem 0;
+    margin-bottom: 5rem;
+  }
+
+  .hero-section-content-wrapper {
+    width: 90%;
+    display: block;
+  }
+
+  .hero-section-content {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    /* max-width: 547px; */
+  }
+
+  .hero-section-content h1 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .hero-section-content .description {
+    font-size: 0.7rem;
+    padding: 1rem 0;
+    max-width: 580px;
+  }
+
+  .hero-btn-container {
+    margin: 1.5rem 0 4rem 0;
+  }
+
+  .hero-btn-container button {
+    margin: 0 auto;
+    padding: 0.8rem 0;
+    width: 80%;
+    font-size: 0.7rem;
+    max-width: 200px;
+  }
+
+  .hero-image {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  /* STYLING FOR THE FEATURES SECTION */
+
+
+  .features-section-content-wrapper {
+    width: 90%;
+  }
+
+  .section-header {
+    font-size: 1.5rem ;
+  }
+
+  .features-section-content-wrapper .heading p {
+    font-size: 0.7rem;
+    padding-top: 1rem;
+  }
+
+  .features-section-content {
+    display: block;
+    padding-top: 4rem;
+  }
+
+  .features-section-app-features {
+    width: 100%;
+  }
+
+  .app-features-card {
+    width: 100%;
+    max-width: 440px;
+    margin-bottom: 2rem;
+    margin: 0 auto 2rem auto;
+  }
+
+  .app-features-card:last-child {
+    margin-bottom: 4rem;
+  }
+
+  .app-features-content {
+    width: 85%;
+  }
+
+  .feature-icon {
+    width: 11%;
+  }
+
+  .app-features-content h3 {
+    font-size: 1rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .app-features-content p {
+    font-size: 0.7rem;
+  }
+
+
+  .features-section-image {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+
+  /* HOW IT WORKS SECTIION */
+
+  .how-it-works-content-wrapper {
+    width: 90%;
+    /* padding: 6rem 0; */
+  }
+
+  .how-it-works-content-wrapper .section-header {
+    margin-bottom: 1rem;
+  }
+
+  .how-it-works-card-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+
+  .how-it-works-card {
+    /* max-width: 358px; */
+    margin: 0 auto 4rem auto;
+  }
+
+  .how-it-works-card-content > img {
+    width: 11%;
+  }
+
+  .card-content-header {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+
+  .how-it-works-card-content .description {
+    font-size: 0.7rem;
+  }
+
+  .card-image {
+    padding-top: 2rem;
+  }
+
+
+  /* STYLING THE FOOTER */
+
+  .footer-content {
+    width: 90%;
+    padding: 1.5rem 0;
+    display: block;
+  }
+
+  .footer-content h3,
+  .footer-content p {
+    font-size: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-content h3 {
+    margin-top: 4rem;
+  }
+
+
+}
+
+@media screen and (min-width: 1121px) and (max-width: 1620px) {
+
+  .nav-bar {
+    width: 90%;
+    max-width: 1300px;
+  }
+
+  .hero-section-content-wrapper {
+    width: 90%;
+    max-width: 1300px;
+  }
+
+  .hero-section-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section-content .description {
+    font-size: 0.8rem;
+    max-width: 480px;
+  }
+
+  .hero-btn-container button {
+    font-size: 0.8rem;
+
+  }
+
+  .hero-image {
+    max-width: 630px;
+  }
+
+
+
+  .features-section-content-wrapper {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .app-features-card {
+    
+    max-width: 440px;
+    margin: 0 0 2rem 0;
+  }
+
+  .app-features-card:last-child {
+    margin-bottom: 1rem;
+  }
+
+  .app-features-content {
+    width: 85%;
+  }
+
+  .feature-icon {
+    width: 11%;
+  }
+
+  .app-features-content h3 {
+    font-size: 1rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .app-features-content p {
+    font-size: 0.7rem;
+  }
+
+
+  .how-it-works-content-wrapper {
+    width: 90%;
+    max-width: 1300px;
+    /* padding: 6rem 0; */
+  }
+
+  .how-it-works-content-wrapper .section-header {
+    margin-bottom: 1rem;
+  }
+
+
+  .how-it-works-card {
+    max-width: 358px;
+    margin: 0 auto 2rem auto;
+  }
+
+
+
+  .card-content-header {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+
+  .how-it-works-card-content .description {
+    font-size: 0.7rem;
+  }
+
+  .card-image {
+    padding-top: 2rem;
+  }
+}
 
 

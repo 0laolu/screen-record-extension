@@ -1,5 +1,8 @@
 console.log("Hi, i have been injected")
 
+let exportedBlob = null
+var recorder = null 
+let base64File = null
 
 chrome.runtime.onMessage.addListener( (message, sender, sendResponse)=> {
 
@@ -13,15 +16,12 @@ chrome.runtime.onMessage.addListener( (message, sender, sendResponse)=> {
 
         navigator.mediaDevices.getDisplayMedia({
             audio: true,
-            video: {
-                width: 999999999,
-                height: 999999999
-            },
-            surfaceSwitching: "include"
-        }).then((stream) => {
-            console.log(stream)
-            onAccessApproved(stream)
+            video: true
         })
+            .then((stream) => {
+                console.log(stream)
+                onAccessApproved(stream)
+            })
     }
 
     if(message.action === "stop_video") {
@@ -37,38 +37,20 @@ chrome.runtime.onMessage.addListener( (message, sender, sendResponse)=> {
     }
 })
 
-// getting a randomID
-
-function generateRandomId(length = 8) {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let randomId = '';
-    
-    for (let i = 0; i < length; i++) {
-      const randomIndex = Math.floor(Math.random() * characters.length);
-      randomId += characters.charAt(randomIndex);
-    }
-    
-    return randomId;
-}
-
   // function that converts blob to base64
 function blobToBase64(blob, callback) {
-const reader = new FileReader();
+    const reader = new FileReader();
 
-reader.onload = function () {   
-    const base64String = reader.result.split(',')[1];
-    callback(base64String);
-};
+    reader.onload = function () {   
+        const base64String = reader.result.split(',')[1];
+        callback(base64String);
+    };
 
     reader.readAsDataURL(blob);
 }
 
 
 // calling the onAccessApproved function
-
-let exportedBlob = null
-var recorder = null 
-let base64File = null
 
 const onAccessApproved = (stream) => {
     // when access has been approved
@@ -114,14 +96,17 @@ const onAccessApproved = (stream) => {
 
     // accessing the recording
     recorder.ondataavailable = function(event) {
-        
+        console.log("this is when the ondataavailable event has been called")
         if(event.data.size > 0) {
-            exportedBlob = new Blob([event.data], { type: 'video/webm' })
+            // exportedBlob = new Blob([event.data], { 'type': 'video/webm' })
+            exportedBlob = event.data
             console.log(videoId) 
 
             blobToBase64(exportedBlob, function (base64String) {
                 base64File = base64String
             })
+
+            console.log(base64File)
 
             fetch(`https://screen-recorder.fly.dev/sendBlob/${videoId}`, {
                 method: "POST",
