@@ -17,7 +17,7 @@ export default function Hero() {
                     </p>
 
                     <div className="hero-btn-container">
-                        <button onClick={() => navigate("/videoUrl")}>Install HelpMeOut <span><img src={Arrow} alt="" /></span></button>
+                        <button onClick={() => navigate("/register")}>Install HelpMeOut <span><img src={Arrow} alt="" /></span></button>
                     </div>
                 </div>
                 <div className="hero-image">

@@ -21,7 +21,7 @@ button {
 .extension-container {
   border: none;
   width: 90%;
-  max-width: 252px;
+  max-width: 260px;
   margin: 0 auto;
 }
 
@@ -29,7 +29,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
 }
 
 .nav-icons img {
@@ -70,12 +70,11 @@ button {
   margin-left: 0.5rem;
 }
 
-.start-btn, 
-.stop-btn {
+.start-btn {
   background-color: #120B48;
   color: white;
   width: 100%;
-  padding: 0.7rem 0;
+  padding: 0.9rem 0;
   border: none;
   border-radius: 12px;
   outline: none;
@@ -134,6 +133,10 @@ section {
   display: flex;
   justify-content: space-evenly;
   width: 50%;
+}
+
+.get-started {
+  cursor: pointer;
 }
 
 

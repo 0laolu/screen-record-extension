@@ -18,7 +18,7 @@ export default function Header() {
                         <li>How It Works</li>
                     </div>
                     <div className="get-started">
-                        <li>Get Started</li>
+                        <li onClick={() => navigate("/register")}>Get Started</li>
                     </div>
                 </ul>
             </nav>

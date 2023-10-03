@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Routes, Route } from "react-router-dom"
 import VideoPreview from './components/video-preview/VideoPreview'
 import LandingPage from './components/landingPage/LandingPage'
+import SignUp from './components/signUp/SignUp'
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
       
       <Routes>
         <Route path='/' element={<LandingPage />}/>
+        <Route path='register' element={<SignUp />}/>
         <Route path='videoUrl' element={<VideoPreview />}/>
       </Routes>
     </>

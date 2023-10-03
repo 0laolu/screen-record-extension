@@ -67,7 +67,9 @@ export default function VideoPreviewBody() {
                     </div>
                 </div>
                 <div className={styles.recordedVideo}>
-
+                    <video controls width="250">
+                        <source src="" type="video/webm" />
+                    </video>
                 </div>
             </section>
             <section className={styles.saveVideoContainer}>
